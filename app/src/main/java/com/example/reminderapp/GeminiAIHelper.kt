@@ -29,7 +29,7 @@ class GeminiAIHelper(private val context: Context) {
 
     companion object {
         private const val TAG = "GeminiAIHelper"
-        private const val DEFAULT_API_KEY = "AIzaSyAswsoWd6lWjNcTSYxkR7lRlWUeRMSDVpg"
+        private const val DEFAULT_API_KEY = "-"
 
         // Message types
         const val MESSAGE_TYPE_REMINDER = "reminder"
