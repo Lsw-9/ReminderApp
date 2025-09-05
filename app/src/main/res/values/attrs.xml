@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Custom attributes for reminder theming -->
+    <attr name="reminderBackgroundColor" format="color" />
+    <attr name="reminderTextColorPrimary" format="color" />
+    <attr name="reminderTextColorSecondary" format="color" />
+    <attr name="reminderChipBackground" format="color" />
+</resources>

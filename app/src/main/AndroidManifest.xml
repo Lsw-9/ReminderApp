@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.reminderapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <queries>
+        <package android:name="com.google.android.gms" />
+    </queries>
+
+    <application
+        android:name=".ReminderApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ReminderApp"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <receiver android:name=".ReminderBroadcastReceiver" />
+        <receiver android:name=".ReminderBroadcastReceiver" />
+        <receiver android:name=".SnoozeActionReceiver" />
+        <receiver android:name=".DoneActionReceiver" />
+
+        <activity
+            android:name=".AIChatActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"
+            android:label="AI Chat"
+            android:theme="@style/Theme.ReminderApp.NoActionBar"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".game.PaddleGameActivity"
+            android:exported="false"
+            android:label="Catch Ball Game"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ReminderApp.NoActionBar" />
+
+        <activity
+            android:name=".ReminderAlertActivity"
+            android:excludeFromRecents="true"
+            android:showOnLockScreen="true"
+            android:showWhenLocked="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:turnScreenOn="true" />
+        <activity
+            android:name=".Settings"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ReminderApp.NoActionBar" />
+        <activity
+            android:name=".ManageCategories"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ReminderApp.NoActionBar" />
+        <activity
+            android:name=".CreateReminder"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ReminderApp.NoActionBar"
+            android:windowSoftInputMode="adjustResize"
+            android:label="Create Reminder"
+            android:parentActivityName=".MainActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <data android:scheme="reminder" />
+        </intent-filter>
+    </activity>
+
+        <activity
+            android:name=".editInfoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ReminderApp.NoActionBar" />
+        <activity
+            android:name=".AuthActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ReminderApp.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ReminderApp.NoActionBar" />
+        <activity
+            android:name=".WelActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ReminderApp.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<icons defaultWidth="24dp" defaultHeight="24dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <category id="1" name="Actions">
+        <icon id="1" drawable="@android:drawable/ic_lock_idle_alarm" />
+        <icon id="2" drawable="@android:drawable/ic_menu_my_calendar" />
+        <icon id="3" drawable="@android:drawable/ic_menu_agenda" />
+        <icon id="4" drawable="@android:drawable/ic_popup_reminder" />
+        <icon id="5" drawable="@android:drawable/ic_menu_edit" />
+        <icon id="6" drawable="@android:drawable/ic_menu_sort_by_size" />
+        <icon id="7" drawable="@android:drawable/ic_menu_today" />
+        <icon id="8" drawable="@android:drawable/ic_menu_recent_history" />
+    </category>
+</icons> 

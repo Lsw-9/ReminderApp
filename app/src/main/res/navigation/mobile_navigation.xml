@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.reminderapp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_calendar"
+        android:name="com.example.reminderapp.ui.Calendar.CalendarFragment"
+        android:label="@string/menu_calendar"
+        tools:layout="@layout/fragment_calendar" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.reminderapp.ui.Profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <activity
+        android:id="@+id/nav_manage_categories"
+        android:name="com.example.reminderapp.ManageCategories"
+        android:label="Manage Categories"
+        tools:layout="@layout/activity_manage_categories" />
+
+    <activity
+        android:id="@+id/nav_settings"
+        android:name="com.example.reminderapp.Settings"
+        android:label="Settings"
+        tools:layout="@layout/activity_settings" />
+
+    <activity
+        android:id="@+id/nav_AI_chat"
+        android:name="com.example.reminderapp.AIChatActivity"
+        android:label="AI Chat Activity"
+        tools:layout="@layout/activity_ai_chat" />
+
+
+</navigation>

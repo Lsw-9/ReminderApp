@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">ReminderApp</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Reminder App</string>
+    <string name="nav_header_subtitle">reminderapp12@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="action_edit">Edit</string>
+    <string name="nav_logout">Logout</string>
+    <string name="select_icon">Select an Icon</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_calendar">Calendar</string>
+    <string name="menu_profile">Profile</string>
+    <string name="not_yet">Not yet</string>
+    <string name="manage_categories">Manage Categories</string>
+    <string name="AI_chat">AI Assistant</string>
+    <string name="Settings">Settings</string>">
+    <string name="About">About</string>">
+    <string name="email_text"><u>reminderapp12@gmail.com</u></string>
+
+    <string name="default_notification_channel_id">default_channel</string>
+    <string name="web_client_id">1040195618883-n48rfj7qjapu64t2uq3duh73joitb771.apps.googleusercontent.com</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <plurals name="pending_reminders">
+        <item quantity="one">%d PENDING REMINDER</item>
+        <item quantity="other">%d PENDING REMINDERS</item>
+    </plurals>
+
+</resources>
