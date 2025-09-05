@@ -27,7 +27,7 @@ class EmailSender {
 
         // App-specific email account
         private const val APP_EMAIL = "reminderapp12@gmail.com"
-        private const val APP_PASSWORD = "vvwxmyhppakxxjsx" // App password
+        private const val APP_PASSWORD = "-" // App password
 
         suspend fun sendReminderEmail(context: Context, reminder: Reminder, userEmail: String): Boolean = withContext(Dispatchers.IO) {
             try {
